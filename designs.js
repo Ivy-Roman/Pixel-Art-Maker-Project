@@ -1,12 +1,14 @@
 const colorPicker = document.querySelector("#colorPicker");
 const sizePicker = document.querySelector("#sizePicker");
 const table = document.querySelector("#pixelCanvas");
+const inputWidth = document.querySelector("#inputWidth");
+const inputHeight = document.querySelector("#inputHeight");
 
 
 sizePicker.addEventListener('submit', function(e) {
     e.preventDefault();
-    let width = document.querySelector("#inputWidth").value;
-    let height = document.querySelector("#inputHeight").value;
+    let width = inputWidth.value;
+    let height = inputHeight.value;
     makeGrid(width, height);
 })
 
